@@ -19,6 +19,10 @@ public class Persona {
         nombre = n;
         edad = e;
     }
+
+    Persona() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
     public void establecerNombre(String n){
         nombre = n;
@@ -36,13 +40,4 @@ public class Persona {
         return edad;
     }
     
-    public double promedioEdades(ArrayList<Persona> lista){
-        double promedio = 0;
-        double suma = 0;
-        for (int i = 0; i < lista.size(); i++) {
-            suma = lista.get(i).obtenerEdad();
-        }
-        promedio = suma/lista.size();
-        return promedio;
-    }
 }
