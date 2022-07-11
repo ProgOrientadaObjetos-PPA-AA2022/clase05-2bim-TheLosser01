@@ -63,10 +63,9 @@ public class Principal2 {
                     TransporteMaritimo m1 = new TransporteMaritimo();
                     m1.establecerTarifa();
                 
-                    
-                
-                    
-            }
+                    System.out.printf("%s\n", m1);
+                    break;
+                }
            
         }
     }
